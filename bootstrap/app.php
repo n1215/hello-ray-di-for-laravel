@@ -11,12 +11,14 @@
 |
 */
 
-use App\Ray\Module;
-use Ray\Di\Injector;
-use Ray\RayDiForLaravel\RayRouter;
+//use App\Ray\Module;
+//use Ray\Di\Injector;
+//use Ray\RayDiForLaravel\RayDiServiceProvider;
+//use Ray\RayDiForLaravel\RayRouter;
 
-$app = new Illuminate\Foundation\Application(
-    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
+$app = new Ray\RayDiForLaravel\Application(
+    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__),
+    new Ray\Di\Injector(new App\Ray\Module())
 );
 
 /*
@@ -45,7 +47,11 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
-$app['router'] = new RayRouter($app['events'], $app, new Injector(new Module()));
+
+//$app['router'] = new RayRouter($app['events'], $app, new Injector(new Module()));
+
+// ServiceProvider版
+//$app->register(new RayDiServiceProvider($app, new Injector(new Module())));
 
 /*
 |--------------------------------------------------------------------------
