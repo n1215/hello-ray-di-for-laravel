@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b694e4c4afbc769b5db3c29a1c10d07",
+    "content-hash": "96ad25ed3860e1df63b5802ad683d762",
     "packages": [
         {
             "name": "brick/math",
@@ -3286,29 +3286,27 @@
         },
         {
             "name": "ray/ray-di-for-laravel",
-            "version": "dev-master",
+            "version": "dev-override-application",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ray-di/Ray.RayDiForLaravel.git",
-                "reference": "26e7620bd7b9b23719c031b52d1a278a717e4fe9"
+                "url": "https://github.com/n1215/Ray.RayDiForLaravel.git",
+                "reference": "bf6b70bd5469a03b41cbe1693007f9ee9ff0f602"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.RayDiForLaravel/zipball/26e7620bd7b9b23719c031b52d1a278a717e4fe9",
-                "reference": "26e7620bd7b9b23719c031b52d1a278a717e4fe9",
+                "url": "https://api.github.com/repos/n1215/Ray.RayDiForLaravel/zipball/bf6b70bd5469a03b41cbe1693007f9ee9ff0f602",
+                "reference": "bf6b70bd5469a03b41cbe1693007f9ee9ff0f602",
                 "shasum": ""
             },
             "require": {
                 "ray/di": "^2.14"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Ray\\RayDiForLaravel\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3325,10 +3323,9 @@
                 "laravel"
             ],
             "support": {
-                "issues": "https://github.com/ray-di/Ray.RayDiForLaravel/issues",
-                "source": "https://github.com/ray-di/Ray.RayDiForLaravel/tree/master"
+                "source": "https://github.com/n1215/Ray.RayDiForLaravel/tree/override-application"
             },
-            "time": "2022-03-18T08:47:08+00:00"
+            "time": "2022-03-26T05:24:02+00:00"
         },
         {
             "name": "symfony/console",
@@ -8341,7 +8338,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0.2"
+        "php": "^8.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
