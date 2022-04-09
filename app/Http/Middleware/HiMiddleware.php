@@ -5,8 +5,10 @@ namespace App\Http\Middleware;
 use App\Domain\Double\DoubleInterface;
 use Closure;
 use Illuminate\Http\Request;
+use Ray\RayDiForLaravel\Attribute\Injectable;
 use Symfony\Component\HttpFoundation\Response;
 
+#[Injectable]
 class HiMiddleware
 {
 

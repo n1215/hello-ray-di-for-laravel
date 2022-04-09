@@ -5,6 +5,9 @@ namespace App\Console\Commands;
 use App\Domain\Double\DoubleInterface;
 use Illuminate\Console\Command;
 
+/**
+ * @\Ray\RayDiForLaravel\Attribute\Injectable
+ */
 class HelloCommand extends Command
 {
     /**
