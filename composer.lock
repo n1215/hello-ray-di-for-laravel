@@ -3290,21 +3290,31 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/n1215/Ray.RayDiForLaravel.git",
-                "reference": "0d129dfc8f3c2148ee712c2890134d3e615949b0"
+                "reference": "2446e27fd723ae86bd04551ffab053dfeb5f4d99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/n1215/Ray.RayDiForLaravel/zipball/0d129dfc8f3c2148ee712c2890134d3e615949b0",
-                "reference": "0d129dfc8f3c2148ee712c2890134d3e615949b0",
+                "url": "https://api.github.com/repos/n1215/Ray.RayDiForLaravel/zipball/2446e27fd723ae86bd04551ffab053dfeb5f4d99",
+                "reference": "2446e27fd723ae86bd04551ffab053dfeb5f4d99",
                 "shasum": ""
             },
             "require": {
+                "php": ">=8.0",
                 "ray/di": "^2.14"
+            },
+            "require-dev": {
+                "laravel/framework": "^9.8",
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Ray\\RayDiForLaravel\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Ray\\RayDiForLaravel\\": "tests/"
                 }
             },
             "license": [
@@ -3325,7 +3335,7 @@
             "support": {
                 "source": "https://github.com/n1215/Ray.RayDiForLaravel/tree/override-application"
             },
-            "time": "2022-04-09T10:44:20+00:00"
+            "time": "2022-04-15T10:47:33+00:00"
         },
         {
             "name": "symfony/console",

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Attribute\Loggable;
 use App\Domain\Double\DoubleInterface;
 use App\Http\Requests\GetHelloRequest;
+use Illuminate\Database\DatabaseManager;
 use Ray\Di\Di\Inject;
 use Ray\Di\Di\PostConstruct;
 use Ray\Di\Di\Set;
@@ -18,7 +19,8 @@ class HelloController extends Controller
 
     public function __construct(
         // Inject dependency
-        private readonly DoubleInterface $double
+        private readonly DoubleInterface $double,
+        private readonly DatabaseManager $databaseManager
     ){}
 
     #[Inject]
@@ -41,8 +43,8 @@ class HelloController extends Controller
     public function index(GetHelloRequest $request)
     {
         return view('hello', [
-            'i' => $this->double->double(1)
+            'i' => $this->double->double(1),
+            'dbname' => $this->databaseManager->getDatabaseName(),
         ]);
     }
 }
-
